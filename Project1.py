@@ -371,9 +371,9 @@ def ibm_model2(sentence_pairs, iterations):
         iteration += 1
     return a, table_ef
 
-def test_IBMModel2():
+def test_IBMModel2(numSentences):
 
-    no_of_sentences = 30
+    no_of_sentences = numSentences
     
     sentences = comtrans.aligned_sents()[:no_of_sentences]
     sent_pairs = []
